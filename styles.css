@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
+  color: #007bff;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+p.text-muted {
+  font-size: 0.9em;
+}

@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "member": "John Doe",
+      "content": "Requesting $500 for a youth camp.",
+      "status": "Pending",
+      "approvedAmount": "500"
+    },
+    {
+      "member": "Jane Smith",
+      "content": "Asking for help with $200 for new books.",
+      "status": "Approved",
+      "approvedAmount": "200"
+    }
+  ],
+  "members": [
+    {
+      "name": "John Doe",
+      "role": "Member"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "Member"
+    },
+    {
+      "name": "Pastor Greg",
+      "role": "Leader"
+    }
+  ],
+  "paywall": {
+    "totalAmountRequested": "700",
+    "totalAmountApproved": "500"
+  }
+}
