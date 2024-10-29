@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div id="header-container"></div>
-    <div class="container">
-        <h2>Login</h2>
+    <div class="container mt-5">
+        <h2 class="text-center">Login</h2>
         <form id="loginForm">
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -18,19 +19,24 @@
             <div class="form-group">
                 <label for="role">Role:</label>
                 <select id="role" class="form-control" required>
+                    <option value="">Select Role</option>
                     <option value="admin">Admin</option>
                     <option value="leader">Group Leader</option>
                     <option value="member">Member</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
     </div>
     <script>
         document.getElementById("loginForm").onsubmit = function(event) {
             event.preventDefault();
             const role = document.getElementById("role").value;
-            window.location.href = role + "-dashboard.html";
+            if (role) {
+                window.location.href = role + "-dashboard.html";
+            } else {
+                alert("Please select a role.");
+            }
         };
     </script>
 </body>

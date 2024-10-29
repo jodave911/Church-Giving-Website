@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Requests</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Requests</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html">Group Leader Portal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link active" href="requests.html">Requests</a></li>
-        <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
-        <li class="nav-item"><a class="nav-link" href="paywall.html">Paywall</a></li>
-        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="container mt-5">
-    <h2>Requests</h2>
-    <p class="text-muted">List of requests submitted by group members for approval.</p>
-    <div id="request-list" class="row">
-      <!-- Requests will be populated here by scripts.js -->
-    </div>
-  </div>
-
-  <script src="scripts.js"></script>
+    <div id="header-container"></div>
+    <main class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h4 class="sidebar-heading">Requests Navigation</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="requests.html">View Requests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-dashboard.html">Admin Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h2>Requests</h2>
+                <p>Manage and review member requests here.</p>
+                <div class="mt-4">
+                    <h3>Pending Requests</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            John Doe
+                            <div>
+                                <button class="btn btn-success btn-sm">Approve</button>
+                                <button class="btn btn-danger btn-sm">Reject</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Jane Smith
+                            <div>
+                                <button class="btn btn-success btn-sm">Approve</button>
+                                <button class="btn btn-danger btn-sm">Reject</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

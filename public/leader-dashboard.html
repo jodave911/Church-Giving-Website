@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Leader Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div id="header-container"></div>
-    <main class="container">
-        <h2>Group Leader Dashboard</h2>
-        <p>Review member requests and send them for further approval.</p>
-        <a href="paywall.html" class="btn btn-secondary">Manage Fund Requests</a>
+    <main class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h4 class="sidebar-heading">Leader Navigation</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="leader-dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="members.html">View Members</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h2>Leader Dashboard</h2>
+                <p>Manage your group and view member activities.</p>
+                <div class="mt-4">
+                    <h3>Group Overview</h3>
+                    <p>Total Members: 25</p>
+                    <p>Pending Requests: 3</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

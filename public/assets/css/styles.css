@@ -1,0 +1,41 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  padding: 48px 0 0;
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover {
+  color: #0056b3;
+}
+
+h1, h2 {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      position: relative;
+      height: auto;
+      padding: 0;
+  }
+  .sidebar .nav-link {
+      padding: 10px;
+  }
+}
